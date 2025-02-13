@@ -1,10 +1,16 @@
 <script setup>
 
 import { ref } from "vue";
+import axios from "axios";
 
 const fileName = ref("main.cpp");
-const code = ref("public static void main(String[] args) {System.out.println(\"Hello World!\")}")
+const code = ref("class HelloWorld {public static void main(String[] args) {System.out.println(\"Hello World!\");}}")
 const output = ref("");
+
+// TODO: Implement this method after creating the API
+const run = async () => {
+  output.value = "Success";
+}
 
 </script>
 
@@ -15,6 +21,14 @@ const output = ref("");
       <p>{{ fileName }}</p>
       <textarea>{{ code }}</textarea>
     </div>
+
+    <div class="submit-container">
+      <button @click="run">Run</button>
+    </div>
+
+    <div class="output-container">
+      <textarea>{{ output }}</textarea>
+    </div>
   </main>
 </template>
 
@@ -23,5 +37,6 @@ textarea {
   width: 750px;
   height: 300px;
   resize: none;
+
 }
 </style>
