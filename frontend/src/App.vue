@@ -1,17 +1,22 @@
 <script setup>
-
 import { ref } from "vue";
 import axios from "axios";
 
 const fileName = ref("main.cpp");
-const code = ref("class HelloWorld {public static void main(String[] args) {System.out.println(\"Hello World!\");}}")
+const code = ref(
+  'class HelloWorld {public static void main(String[] args) {System.out.println("Hello World!");}}'
+);
 const output = ref("");
 
 // TODO: Implement this method after creating the API
 const run = async () => {
-  output.value = "Success";
-}
-
+  try {
+    const response = await axios.post("http://localhost:8080/api/run", code.value);
+    output.value = response.data;
+  } catch (error) {
+    output.value = "Error running code";
+  }
+};
 </script>
 
 <template>
@@ -37,6 +42,5 @@ textarea {
   width: 750px;
   height: 300px;
   resize: none;
-
 }
 </style>

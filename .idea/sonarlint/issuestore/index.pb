@@ -5,3 +5,5 @@ u
 Ecompiler/src/main/java/ntnu/stud/no/compiler/CompilerApplication.java,d/1/d195428a033e07c812caa86d2eff6bc725f109e4
 
 Ocompiler/src/main/java/ntnu/stud/no/compiler/controller/CompilerController.java,1/8/186541b7f6fa80a9a49ae68b34f30811e3b91b24
+D
+frontend/src/App.vue,b/3/b395f139c6c3b350eecc10789c2fb0946ccb4abb
