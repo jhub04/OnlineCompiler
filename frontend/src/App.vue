@@ -11,7 +11,8 @@ const output = ref("");
 // TODO: Implement this method after creating the API
 const run = async () => {
   try {
-    const response = await axios.post("http://localhost:8080/api/run", code.value);
+    const response = await axios.post("http://localhost:8080/api/run", code.value, { headers: {"Content-Type": "application/json"} });
+    console.log(code.value);
     output.value = response.data;
   } catch (error) {
     output.value = "Error running code";

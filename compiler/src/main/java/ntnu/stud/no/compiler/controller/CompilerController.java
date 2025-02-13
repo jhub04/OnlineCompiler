@@ -17,6 +17,6 @@ public class CompilerController {
   @PostMapping("/run")
   public String run(@RequestBody String code) {
     logger.info("User POST request received with input: {}", code);
-    return "Ok!";
+    return code;
   }
 }
