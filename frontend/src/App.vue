@@ -4,13 +4,13 @@ import axios from "axios";
 
 const fileName = ref("main.cpp");
 const code = ref(
-  'class HelloWorld {public static void main(String[] args) {System.out.println("Hello World!");}}'
+  'class Code {public static void main(String[] args) {System.out.println("Hello World!");}}'
 );
 const output = ref("");
 
 const run = async () => {
   try {
-    const response = await axios.post("http://localhost:8080/api/run", code.value, { headers: {"Content-Type": "application/json"} });
+    const response = await axios.post("http://localhost:8080/api/run", code.value, { headers: {"Content-Type": "text/plain"} });
     output.value = response.data;
   } catch (error) {
     output.value = "Error running code";
@@ -23,7 +23,7 @@ const run = async () => {
   <main>
     <div class="input-container">
       <p>{{ fileName }}</p>
-      <textarea>{{ code }}</textarea>
+      <textarea v-model="code">{{ code }}</textarea>
     </div>
 
     <div class="submit-container">

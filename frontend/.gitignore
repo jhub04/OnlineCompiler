@@ -27,4 +27,7 @@ coverage
 *.sln
 *.sw?
 
+../Code.java
+../Code.class
+
 *.tsbuildinfo
