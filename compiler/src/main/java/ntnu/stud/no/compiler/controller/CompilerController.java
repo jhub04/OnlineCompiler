@@ -32,7 +32,7 @@ public class CompilerController {
       }
 
       ProcessBuilder pb = new ProcessBuilder(
-          "docker", "run", "--rm", "-v", javaFile.getAbsolutePath() + ":app/Code.java", "java-runner"
+          "docker", "run", "--rm", "-v", javaFile.getAbsolutePath() + ":/app/Code.java", "java-runner"
       );
       pb.redirectErrorStream(true);
       Process process = pb.start();
