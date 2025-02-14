@@ -48,7 +48,7 @@ public class CompilerController {
       return ResponseEntity.ok(output.toString());
 
     } catch (IOException | InterruptedException e) {
-      return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error: " + e.getMessage());
+      throw new RuntimeException(e);
     }
 
   }

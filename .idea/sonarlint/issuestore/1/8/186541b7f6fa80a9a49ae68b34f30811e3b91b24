@@ -1,7 +1,11 @@
 
+	java:S1123"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8’âîĞ2J$3ac6af02-c679-49a6-bb75-68716206f131
 
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(÷»úÿÿÿÿÿ8Š©İĞ2J$dfdbf60f-fb58-4a2c-a8d3-de77c8c8c84b
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(÷»úÿÿÿÿÿ8 âîĞ2J$372cea5e-fc9d-44e3-9590-83fa4ceea59d
 ¡
-java:S21422"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ò¶È8Œ©İĞ2J$4e6b5343-ed12-4ae6-b3f6-4d25ecb9a6e4
-O
-java:S1128"3Remove this unused import 'java.io.BufferedWriter'.(¬õº/8ˆåĞ2
+java:S21422"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ò¶È8¢âîĞ2J$38b087bb-9c10-4776-b099-ad77baf4b2ac
+u
+java:S1128"3Remove this unused import 'java.io.BufferedWriter'.(¬õº/8§âîĞ2J$04b462f6-50de-46f3-b6a9-7f6f798fb8a7
+ˆ
+java:S1128
+"@Remove this unused import 'org.springframework.http.HttpStatus'.(íŸ¤Šúÿÿÿÿ8§âîĞ2J$e2e64387-533c-4433-b48c-d08644a1ae1d
